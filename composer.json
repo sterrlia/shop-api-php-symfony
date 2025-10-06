@@ -1,8 +1,8 @@
 {
-    "name": "shop_api_php_symfony",
+    "name": "sterrlia/shop_api_php_symfony",
     "description": "",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
