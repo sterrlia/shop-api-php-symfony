@@ -1,4 +1,6 @@
 {
+    "name": "shop-api-php-symfony",
+    "description": "",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
