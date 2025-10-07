@@ -1,4 +1,3 @@
-
 <?php
 
 declare(strict_types=1);
@@ -18,29 +17,29 @@ final class Version20251007000000 extends AbstractMigration
     public function up(Schema $schema): void
     {
         $this->addSql(<<<SQL
-            CREATE TABLE region (
-                id SERIAL PRIMARY KEY,
-                name VARCHAR(255) NOT NULL
+            create table region (
+                id serial primary key,
+                name varchar(255) not null
             )
         SQL);
 
         $this->addSql(<<<SQL
-            CREATE TABLE product (
-                id SERIAL PRIMARY KEY,
-                name VARCHAR(255) NOT NULL
+            create table product (
+                id serial primary key,
+                name varchar(255) not null
             )
         SQL);
 
         $this->addSql(<<<SQL
-            CREATE TABLE product_price (
-                id SERIAL PRIMARY KEY,
-                product_id INT NOT NULL,
-                region_id INT NOT NULL,
-                purchase_price INT NOT NULL,
-                sell_price INT NOT NULL,
-                discounted_price INT NOT NULL,
-                CONSTRAINT fk_product FOREIGN KEY(product_id) REFERENCES product(id) ON DELETE CASCADE,
-                CONSTRAINT fk_region FOREIGN KEY(region_id) REFERENCES region(id) ON DELETE CASCADE
+            create table product_price (
+                id serial primary key,
+                product_id int not null,
+                region_id int not null,
+                purchase_price int not null,
+                sell_price int not null,
+                discounted_price int not null,
+                constraint fk_product FOREIGN key(product_id) references product(id) on delete cascade,
+                constraint fk_region FOREIGN key(region_id) references region(id) on delete cascade
             )
         SQL);
 
