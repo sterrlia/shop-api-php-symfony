@@ -48,8 +48,8 @@ final class Version20251007000000 extends AbstractMigration
 
     public function down(Schema $schema): void
     {
-        $this->addSql('DROP TABLE product_price');
-        $this->addSql('DROP TABLE product');
-        $this->addSql('DROP TABLE region');
+        $this->addSql('drop table product_price');
+        $this->addSql('drop table product');
+        $this->addSql('drop table region');
     }
 }
