@@ -15,8 +15,9 @@ use Symfony\Component\Security\Http\Authenticator\Passport\SelfValidatingPasspor
 
 class ApiKeyAuthenticator extends AbstractAuthenticator
 {
-    public function __construct(private string $validApiKey)
-    {
+    public function __construct(
+        private readonly string $validApiKey,
+    ) {
     }
 
     public function supports(Request $request): ?bool

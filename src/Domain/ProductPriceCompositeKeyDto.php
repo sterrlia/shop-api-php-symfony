@@ -11,12 +11,4 @@ final readonly class ProductPriceCompositeKeyDto
         public int $regionId,
     ) {
     }
-
-    public function toKeyString(): string
-    {
-        $productId = $this->productId;
-        $regionId = $this->regionId;
-
-        return "$productId-$regionId";
-    }
 }

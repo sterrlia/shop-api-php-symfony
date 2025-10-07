@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Controller\ProductPrice;
 
-class UpdateProductPricesRequest
+final readonly class UpdateProductPricesRequest
 {
     /** @param UpdateProductPriceDto[] $data */
     public function __construct(
-        public readonly array $data,
+        public array $data,
     ) {
     }
 }

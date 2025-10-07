@@ -6,13 +6,12 @@ namespace App\Infrastructure\Repository;
 
 use App\Domain\Entity\ProductPrice;
 use App\Domain\ProductPriceDto;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<ProductPrice>
+ * @extends AbstractEntityRepository<ProductPrice>
  */
-class ProductPriceRepository extends ServiceEntityRepository
+class ProductPriceRepository extends AbstractEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {

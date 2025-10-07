@@ -8,7 +8,7 @@ final readonly class UpdateProductPricesResponse
 {
     /** @param ProductPriceUpdateErrorDto[] $errors */
     public function __construct(
-        public readonly array $errors,
+        public array $errors,
     ) {
     }
 }
