@@ -41,3 +41,6 @@ jobs:
 
     - name: Run PHP-CS-Fixer
       run: vendor/bin/php-cs-fixer fix --dry-run -
+
+    - name: Validate Symfony container
+      run: bin/console lint:container --no-debug

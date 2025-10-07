@@ -11,7 +11,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
  *
  * @template-extends ServiceEntityRepository<T>
  **/
-class AbstractEntityRepository extends ServiceEntityRepository
+abstract class AbstractEntityRepository extends ServiceEntityRepository
 {
     /**
      * @param list<int> $ids
